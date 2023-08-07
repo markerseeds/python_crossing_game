@@ -33,5 +33,7 @@ class CarManager:
 
     def reset_cars(self):
         for car in self.all_cars:
-            car.clear()
+            car.goto(-350, car.ycor())
+
+        self.all_cars = []
 
